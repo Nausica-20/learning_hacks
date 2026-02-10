@@ -205,3 +205,96 @@ li { margin-bottom: 0.5rem; }
     .article-grid { grid-template-columns: 1fr; }
     .top-nav { padding: 10px 1.5rem; }
 }
+
+/* --- STILE BANNER PUBBLICITARIO (AD-BANNER) --- */
+
+.ad-banner {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #FF7B00; /* Arancione Babbel */
+    border-radius: 12px;
+    padding: 25px;
+    margin: 40px 0;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Il badge "Consigliato" sopra il banner */
+.ad-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #FF7B00;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Griglia per allineare testo e immagine/bottone */
+.ad-grid {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.ad-text {
+    flex: 2;
+}
+
+.ad-text h3 {
+    margin: 0 0 10px 0 !important;
+    font-size: 1.3rem !important;
+    color: #1a1a1a;
+    border: none !important; /* Rimuove il bordo laterale degli h2 standard */
+    padding-left: 0 !important;
+}
+
+.ad-text p {
+    margin: 0 !important;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Contenitore per l'immagine o il bottone Awin */
+.ad-cta {
+    flex: 1;
+    text-align: center;
+    min-width: 150px;
+}
+
+.ad-cta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.ad-cta img:hover {
+    transform: scale(1.05);
+}
+
+/* --- RESPONSIVITÀ (MOBILE) --- */
+@media (max-width: 650px) {
+    .ad-grid {
+        flex-direction: column; /* Testo sopra e immagine sotto su mobile */
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .ad-text h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .ad-badge {
+        right: 50%;
+        transform: translateX(50%); /* Centra il badge su mobile */
+    }
+}
