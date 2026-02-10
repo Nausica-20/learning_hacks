@@ -177,4 +177,47 @@ p { margin-bottom: 1.5rem; }
     h1 { font-size: 2.2rem; }
     .main-header h1 { font-size: 2.5rem; }
     .article-grid { grid-template-columns: 1fr; }
+/* --- TOP NAVIGATION --- */
+.top-nav {
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding: 0 2.5rem;
+}
+
+.home-link {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.home-link:hover {
+    color: var(--primary);
+}
+
+/* Assicurati che il footer-nav abbia uno stile coerente */
+.footer-nav {
+    margin: 20px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.footer-nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+
+    
+
 }
