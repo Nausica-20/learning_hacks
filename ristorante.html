@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guida pratica per ordinare al ristorante all'estero senza sembrare un turista. Frasi utili e consigli culturali.">
+    
+    <meta property="og:title" content="Come ordinare al ristorante come un locale (e non come un turista)">
+    <meta property="og:description" content="Evita le gaffe e scopri le frasi magiche per mangiare bene in Spagna, Francia e oltre.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80">
+    
+    <title>Ordinare al ristorante come un locale | Guida Travel</title>
+
+    <style>
+        /* --- CSS VARIABLES & THEME --- */
+        :root {
+            --primary-color: #D35400; /* Color Terracotta/Cibo */
+            --secondary-color: #2C3E50; /* Blu scuro elegante */
+            --bg-color: #FDFBF7; /* Bianco caldo/carta avorio */
+            --card-bg: #FFFFFF;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-serif: 'Playfair Display', 'Georgia', serif; /* Font elegante per titoli */
+        }
+
+        /* Import Google Font per il tocco "Editoriale" */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            color: #444;
+            background-color: var(--bg-color);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        /* --- LAYOUT --- */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden; /* Per bordi arrotondati immagini */
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            padding: 3rem 2rem 1rem 2rem;
+            text-align: center;
+        }
+
+        .category {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2.8rem;
+            line-height: 1.15;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* --- CONTENT TYPOGRAPHY --- */
+        article { padding: 2.5rem 2rem; }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        p { margin-bottom: 1.5rem; }
+
+        /* --- SPECIAL ELEMENTS --- */
+        
+        /* Box "Gaffe" */
+        .gaffe-box {
+            background-color: #FFF5F5; /* Rosso chiarissimo */
+            border-left: 4px solid #E74C3C;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        .gaffe-box strong { color: #C0392B; }
+
+        /* Box "Frasi Magiche" */
+        .phrase-card {
+            background-color: #F4F6F7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px dashed #BDC3C7;
+            text-align: center;
+        }
+        .phrase-native {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .phrase-trans {
+            font-size: 0.9rem;
+            color: #7F8C8D;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- CALL TO ACTION --- */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #34495E 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .cta-section h3 { color: white; margin-top: 0; }
+        .cta-section p { color: #BDC3C7; }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { background-color: #A04000; }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #F2F2F2;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 2rem;
+        }
+        
+        .disclosure {
+            max-width: 600px;
+            margin: 0 auto 1rem auto;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .container { width: 100%; box-shadow: none; }
+            article { padding: 1.5rem; }
+            .hero-img { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="category">Travel & Food</span>
+            <h1>Come ordinare al ristorante come un locale (e non come un turista)</h1>
+        </header>
+
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Cena all'aperto a Parigi" class="hero-img">
+
+        <article>
+            <p><strong>Ti è mai capitato?</strong> Sei seduto in una splendida plaza a Madrid o in un vivace bistrot a Parigi. Hai fame, il profumo è delizioso, ma quando il cameriere si avvicina, il panico prende il sopravvento. Ti riduci a indicare freneticamente il menu e a mormorare un timido <em>"This, please"</em>.</p>
+
+            <p>Ordinare al ristorante è una delle sfide più comuni (e temute) quando si viaggia. Ma conoscere poche frasi giuste non serve solo a riempire lo stomaco: è il modo più veloce per guadagnarsi il rispetto dei locali e trasformare una cena anonima in un’esperienza autentica.</p>
+
+            <h2>Le gaffe più comuni (che puoi evitare)</h2>
+            <p>Spesso, il problema non è solo la lingua, ma la cultura. Ecco gli errori classici che gridano "Turista!":</p>
+            
+            <div class="gaffe-box">
+                <ul>
+                    <li style="margin-bottom: 10px;">🇮🇹 <strong>In Italia:</strong> Chiedere un "latte" al bar e stupirsi se ricevi un bicchiere di latte bianco freddo invece di un caffè macchiato (tipico errore anglosassone, ma vale la pena ricordarlo!).</li>
+                    <li style="margin-bottom: 10px;">🇪🇸 <strong>In Spagna:</strong> Aspettarsi di cenare alle 19:00, quando la maggior parte delle cucine vere non apre prima delle 21:00.</li>
+                    <li>🇫🇷 <strong>In Francia:</strong> Chiedere il conto troppo in fretta. Per i francesi, il pasto è un rito che va goduto con calma.</li>
+                </ul>
+            </div>
+
+            <h2>3 Segreti per ordinare con sicurezza</h2>
+
+            <h3>1. Saluta sempre (e nel modo giusto)</h3>
+            <p>Non sottovalutare mai il potere di un <em>"Bonjour"</em> o di un <em>"Buenas noches"</em>. In molti paesi, entrare direttamente con la richiesta senza un saluto è considerato estremamente scortese. Un sorriso e un saluto nella lingua locale aprono tutte le porte.</p>
+
+            <h3>2. Impara la "parola magica" del menu</h3>
+            <p>Invece di studiare l'intero vocabolario, focalizzati su come chiedere un consiglio. Questo ti farà sembrare un intenditore e ti farà scoprire i piatti migliori.</p>
+
+            <div class="phrase-card">
+                <span class="phrase-native">"¿Qué me recomienda?"</span>
+                <span class="phrase-trans">🇪🇸 Spagnolo: Cosa mi consiglia?</span>
+            </div>
+
+            <div class="phrase-card">
+                <span class="phrase-native">"Quel est le plat du jour ?"</span>
+                <span class="phrase-trans">🇫🇷 Francese: Qual è il piatto del giorno?</span>
+            </div>
+
+            <h3>3. Gestire il conto senza stress</h3>
+            <p>Evita di fare il gesto universale dello "scrivere nell'aria" (che urla turista da chilometri). Usa la frase corretta: <em>"L'addition, s'il vous plaît"</em> o <em>"La cuenta, por favor"</em>.</p>
+
+            <h2>Perché i manuali di conversazione non bastano</h2>
+            <p>Puoi imparare a memoria una frase, ma cosa succede se il cameriere ti risponde con una domanda che non avevi previsto? <em>"La carne, come la desidera?"</em> o <em>"Volete ancora dell'acqua?"</em>.</p>
+            
+            <p>È qui che entra in gioco il metodo di <strong>Babbel</strong>. A differenza dei vecchi frasari cartacei, le lezioni di Babbel si basano su dialoghi reali. L'app ti prepara a sentire e comprendere le risposte comuni, allenando il tuo orecchio ai suoni naturali della lingua, non a voci robotiche.</p>
+
+            <div class="cta-section">
+                <h3>La tua prossima cena inizia oggi</h3>
+                <p>Imparare a ordinare come un locale è il primo passo per sentirti a casa in qualsiasi parte del mondo. I locali apprezzano lo sforzo e la tua esperienza culinaria ne uscirà trasformata.</p>
+                <p>Vuoi smettere di indicare il menu e iniziare a ordinare con stile?</p>
+                <a href="#" class="btn">Inizia il corso "Cibo e Ristoranti"</a>
+            </div>
+
+        </article>
+    </div>
+
+    <footer>
+        <div class="disclosure">
+            <p><strong>Affiliate Disclosure:</strong> In qualità di affiliato, potrei ricevere una piccola commissione se decidi di iscriverti a Babbel tramite i link presenti in questa pagina. Questo non comporta alcun costo aggiuntivo per te, ma mi aiuta a mantenere questo blog attivo. Raccomando solo strumenti che utilizzo personalmente e che ritengo validi.</p>
+        </div>
+        <p>&copy; 2024 Travel Fluency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
